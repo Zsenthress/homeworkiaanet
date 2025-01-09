@@ -6,11 +6,11 @@
 
 说明：
 train.py用来训练网络模型，test.py用来测试，detect.py用来预测照片、也可用来做可视化
-训练的结果保存在result.docx文档中，网络参数模型在outputs中，其中best.pt为训练过程中最好的模型
+训练的结果保存在result.docx文档中，网络参数模型在outputs中，其中best.pt为训练过程中最好的模型。原开源代码也提供了自己的模型，在iaanet.pt中。
 
 （一）训练模型：
-1、训练集为dataset中的训练及部分
-2、验证集可自行设置，为保证可信度，本文讲验证集设置为train数据集的20%，前2000张照片为训练集。
+1、训练集为dataset中的训练集部分
+2、验证集可自行设置，为保证可信度，本文将val验证集设置为train数据集的20%，即训练集的前2000张照片。
 
 （二）测试模型：
-test.py中以F1score为衡量指标。测试集可选dataset中的MDvsFA(99张)或者SIRST（427张）
+test.py中以F1score为衡量指标。测试集可选dataset中的MDvsFA(99张)或者SIRST（427张）。
