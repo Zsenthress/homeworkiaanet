@@ -11,5 +11,6 @@ train.py用来训练网络模型，test.py用来测试，detect.py用来预测�
 （一）训练模型：
 1、训练集为dataset中的训练及部分
 2、验证集可自行设置，为保证可信度，本文讲验证集设置为train数据集的20%，前2000张照片为训练集。
+
 （二）测试模型：
 test.py中以F1score为衡量指标。测试集可选dataset中的MDvsFA(99张)或者SIRST（427张）
